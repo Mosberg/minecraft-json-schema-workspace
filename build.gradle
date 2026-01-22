@@ -3,7 +3,6 @@ plugins {
   id 'java'
 }
 
-// Enforce Java 21 for any JVM-based tasks/plugins (toolchain is the recommended approach).
 java {
   toolchain {
     languageVersion = JavaLanguageVersion.of(21)
@@ -28,4 +27,11 @@ tasks.register('checkSchemas', Exec) {
 
 tasks.named('check') {
   dependsOn tasks.named('checkSchemas')
+}
+tasks.named('clean') {
+  doFirst {
+    delete fileTree('schemas') {
+      include '**/*.json'
+    }
+  }
 }

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "schemas/data/worldgen/template_pool",
+  "description": "Generated placeholder schema. Replace with a strict schema as coverage improves.",
+  "type": [
+    "object",
+    "array"
+  ],
+  "additionalProperties": true
+}
