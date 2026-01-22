@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/texts.schema.json",
+  "title": "Minecraft Texts JSON",
+  "description": "Schema for JSON files in assets/minecraft/texts (e.g., credits.json)",
+  "type": "object",
+  "properties": {
+    "sections": {
+      "type": "array",
+      "description": "Credits sections",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": { "type": "string" },
+          "titles": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "role": { "type": "string" },
+                "names": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                }
+              },
+              "required": ["role", "names"]
+            }
+          }
+        },
+        "required": ["section", "titles", "roles"]
+      }
+    }
+  },
+  "required": ["sections"]
+}

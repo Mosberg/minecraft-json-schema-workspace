@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/lang.schema.json",
+  "title": "Minecraft Language File",
+  "description": "Schema for lang JSON files in Minecraft 1.21.11 (translations and deprecated keys)",
+  "type": "object",
+  "anyOf": [
+    {
+      "description": "Standard translation file: key-value pairs",
+      "patternProperties": {
+        "^[a-zA-Z0-9_.-]+$": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    {
+      "description": "Deprecated/removed keys file",
+      "properties": {
+        "removed": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["removed"],
+      "additionalProperties": false
+    }
+  ]
+}

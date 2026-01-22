@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/waypoint_style.schema.json",
+  "title": "Minecraft Waypoint Style",
+  "description": "Schema for JSON files in assets/minecraft/waypoint_style (e.g., default.json, bowtie.json)",
+  "type": "object",
+  "properties": {
+    "sprites": {
+      "type": "array",
+      "description": "List of sprite texture paths",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_.-]+:[a-z0-9/_.-]+$"
+      },
+      "minItems": 1
+    },
+    "near_distance": {
+      "type": "integer",
+      "description": "Optional near distance override",
+      "minimum": 1
+    }
+  },
+  "required": ["sprites"]
+}

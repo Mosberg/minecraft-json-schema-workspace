@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/dimension_type.schema.json",
+  "title": "Minecraft Dimension Type",
+  "description": "Schema for dimension type JSON files in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "ambient_light": { "type": "number" },
+    "attributes": { "type": "object" },
+    "cardinal_light": { "type": "string" },
+    "coordinate_scale": { "type": "number" },
+    "has_ceiling": { "type": "boolean" },
+    "has_fixed_time": { "type": "boolean" },
+    "has_skylight": { "type": "boolean" },
+    "height": { "type": "integer" },
+    "infiniburn": { "type": "string" },
+    "logical_height": { "type": "integer" },
+    "min_y": { "type": "integer" },
+    "monster_spawn_block_light_limit": { "type": "integer" },
+    "monster_spawn_light_level": { "type": "integer" },
+    "skybox": { "type": "string" },
+    "timelines": { "type": "string" }
+  },
+  "required": ["ambient_light", "attributes", "coordinate_scale", "has_ceiling", "has_skylight"]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/items.schema.json",
+  "title": "Minecraft Item Model Reference",
+  "description": "Schema for item JSON files in Minecraft 1.21.11 (item model references)",
+  "type": "object",
+  "required": ["model"],
+  "properties": {
+    "model": {
+      "type": "object",
+      "required": ["type", "model"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["minecraft:model"]
+        },
+        "model": {
+          "type": "string",
+          "description": "Namespaced model path",
+          "pattern": "^[a-z0-9_.-]+:[a-z0-9/_.-]+$"
+        },
+        "tints": {
+          "type": "array",
+          "description": "Optional array of tint objects",
+          "items": {
+            "type": "object",
+            "required": ["type", "value"],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["minecraft:constant"]
+              },
+              "value": {
+                "type": "integer",
+                "description": "Tint color value (ARGB integer)"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/frog_variant.schema.json",
+  "title": "Minecraft Frog Variant",
+  "description": "Schema for frog variant JSON files in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "asset_id": {
+      "type": "string",
+      "description": "Resource location for the frog variant texture"
+    },
+    "spawn_conditions": {
+      "type": "array",
+      "description": "Spawn conditions for this frog variant",
+      "items": {
+        "type": "object",
+        "properties": {
+          "priority": { "type": "integer" },
+          "condition": { "type": "object" }
+        },
+        "required": ["priority"]
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["asset_id", "spawn_conditions"]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/instrument.schema.json",
+  "title": "Minecraft Instrument",
+  "description": "Schema for instrument JSON files in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "object",
+      "properties": {
+        "translate": { "type": "string" }
+      },
+      "required": ["translate"]
+    },
+    "range": { "type": "number" },
+    "sound_event": { "type": "string" },
+    "use_duration": { "type": "number" }
+  },
+  "required": ["description", "range", "sound_event", "use_duration"]
+}

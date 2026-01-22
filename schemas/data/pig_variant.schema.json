@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/pig_variant.schema.json",
+  "title": "Minecraft Pig Variant",
+  "description": "Schema for pig variant JSON files in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "asset_id": {
+      "type": "string",
+      "description": "Resource location for the pig variant texture"
+    },
+    "model": {
+      "type": "string",
+      "description": "Optional model name for the pig variant"
+    },
+    "spawn_conditions": {
+      "type": "array",
+      "description": "Spawn conditions for this pig variant",
+      "items": {
+        "type": "object",
+        "properties": {
+          "priority": { "type": "integer" },
+          "condition": { "type": "object" }
+        },
+        "required": ["priority"]
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["asset_id", "spawn_conditions"]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/models/item/trident_in_hand.schema.json",
+  "title": "Minecraft Trident In Hand Model",
+  "description": "Schema for trident_in_hand item models (custom display and gui_light)",
+  "type": "object",
+  "properties": {
+    "gui_light": {
+      "type": "string",
+      "enum": ["front", "side"],
+      "description": "Lighting mode for GUI rendering"
+    },
+    "textures": {
+      "type": "object",
+      "properties": {
+        "particle": { "type": "string" }
+      },
+      "required": ["particle"],
+      "additionalProperties": false
+    },
+    "display": {
+      "type": "object",
+      "description": "Display transformations for different contexts"
+    }
+  },
+  "required": ["gui_light", "textures", "display"],
+  "additionalProperties": false
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/wolf_sound_variant.schema.json",
+  "title": "Minecraft Wolf Sound Variant",
+  "description": "Schema for wolf sound variant JSON files in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "ambient_sound": { "type": "string" },
+    "death_sound": { "type": "string" },
+    "growl_sound": { "type": "string" },
+    "hurt_sound": { "type": "string" },
+    "pant_sound": { "type": "string" },
+    "whine_sound": { "type": "string" }
+  },
+  "required": [
+    "ambient_sound",
+    "death_sound",
+    "growl_sound",
+    "hurt_sound",
+    "pant_sound",
+    "whine_sound"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/trial_spawner.schema.json",
+  "title": "Minecraft Trial Spawner",
+  "description": "Schema for trial spawner JSON files in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "simultaneous_mobs": { "type": "number" },
+    "simultaneous_mobs_added_per_player": { "type": "number" },
+    "spawn_potentials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "data": { "type": "object" },
+          "weight": { "type": "integer" }
+        },
+        "required": ["data", "weight"]
+      },
+      "minItems": 1
+    },
+    "ticks_between_spawn": { "type": "integer" },
+    "total_mobs": { "type": "number" },
+    "total_mobs_added_per_player": { "type": "number" },
+    "loot_tables_to_eject": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "data": { "type": "string" },
+          "weight": { "type": "integer" }
+        },
+        "required": ["data", "weight"]
+      }
+    }
+  },
+  "required": ["spawn_potentials", "ticks_between_spawn"]
+}

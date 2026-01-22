@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/trim_pattern.schema.json",
+  "title": "Minecraft Trim Pattern",
+  "description": "Schema for trim pattern JSON files in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "asset_id": { "type": "string" },
+    "decal": { "type": "boolean" },
+    "description": {
+      "type": "object",
+      "properties": {
+        "translate": { "type": "string" }
+      },
+      "required": ["translate"]
+    }
+  },
+  "required": ["asset_id", "decal", "description"]
+}

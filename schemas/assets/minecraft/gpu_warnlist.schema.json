@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/gpu_warnlist.schema.json",
+  "title": "Minecraft GPU Warnlist",
+  "description": "Schema for assets/minecraft/gpu_warnlist.json in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "renderer": {
+      "type": "array",
+      "description": "List of renderer regex patterns",
+      "items": { "type": "string" }
+    },
+    "version": {
+      "type": "array",
+      "description": "List of version regex patterns",
+      "items": { "type": "string" }
+    },
+    "vendor": {
+      "type": "array",
+      "description": "List of vendor regex patterns",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["renderer", "version", "vendor"]
+}

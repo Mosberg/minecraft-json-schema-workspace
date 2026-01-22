@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/advancements.schema.json",
+  "title": "Minecraft Advancement",
+  "description": "Schema for advancement JSON files in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "parent": {
+      "type": "string",
+      "description": "Parent advancement resource location"
+    },
+    "criteria": {
+      "type": "object",
+      "description": "Criteria for completing the advancement",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "trigger": { "type": "string" },
+          "conditions": { "type": ["object", "array"] }
+        },
+        "required": ["trigger"]
+      }
+    },
+    "display": {
+      "type": "object",
+      "description": "Display properties for the advancement",
+      "properties": {
+        "announce_to_chat": { "type": "boolean" },
+        "background": { "type": "string" },
+        "description": { "type": ["string", "object"] },
+        "frame": { "type": "string" },
+        "icon": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "count": { "type": "integer" }
+          },
+          "required": ["id"]
+        },
+        "show_toast": { "type": "boolean" },
+        "title": { "type": ["string", "object"] }
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "description": "Requirements for completing the advancement",
+      "items": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    },
+    "sends_telemetry_event": {
+      "type": "boolean",
+      "description": "Whether this advancement sends a telemetry event"
+    }
+  },
+  "required": ["criteria"]
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/equipment.schema.json",
+  "title": "Minecraft Equipment Texture Layers",
+  "description": "Schema for equipment JSON files in Minecraft 1.21.11 (armor, carpets, harnesses, etc.)",
+  "type": "object",
+  "required": ["layers"],
+  "properties": {
+    "layers": {
+      "type": "object",
+      "description": "Maps body part or equipment slot to an array of texture layer objects",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["texture"],
+          "properties": {
+            "texture": {
+              "type": "string",
+              "description": "Namespaced texture path",
+              "pattern": "^[a-z0-9_.-]+:[a-z0-9/_.-]+$"
+            },
+            "dyeable": {
+              "type": "object",
+              "description": "If present, indicates this layer is dyeable.",
+              "properties": {
+                "color_when_undyed": {
+                  "type": "integer",
+                  "description": "Color value used when undyed (ARGB integer)"
+                }
+              },
+              "additionalProperties": false
+            },
+            "use_player_texture": {
+              "type": "boolean",
+              "description": "If true, uses the player's skin texture."
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/trim_material.schema.json",
+  "title": "Minecraft Trim Material",
+  "description": "Schema for trim material JSON files in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "asset_name": { "type": "string" },
+    "description": {
+      "type": "object",
+      "properties": {
+        "color": { "type": "string" },
+        "translate": { "type": "string" }
+      },
+      "required": ["color", "translate"]
+    },
+    "override_armor_assets": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  },
+  "required": ["asset_name", "description"]
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/enchantment.schema.json",
+  "title": "Minecraft Enchantment",
+  "description": "Schema for enchantment JSON files in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "anvil_cost": { "type": "integer" },
+    "description": {
+      "type": "object",
+      "properties": {
+        "translate": { "type": "string" }
+      },
+      "required": ["translate"]
+    },
+    "effects": { "type": "object" },
+    "exclusive_set": { "type": "string" },
+    "max_cost": {
+      "type": "object",
+      "properties": {
+        "base": { "type": "integer" },
+        "per_level_above_first": { "type": "integer" }
+      },
+      "required": ["base", "per_level_above_first"]
+    },
+    "max_level": { "type": "integer" },
+    "min_cost": {
+      "type": "object",
+      "properties": {
+        "base": { "type": "integer" },
+        "per_level_above_first": { "type": "integer" }
+      },
+      "required": ["base", "per_level_above_first"]
+    },
+    "slots": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "supported_items": { "type": "string" },
+    "weight": { "type": "integer" }
+  },
+  "required": [
+    "anvil_cost",
+    "description",
+    "effects",
+    "max_cost",
+    "max_level",
+    "min_cost",
+    "slots",
+    "supported_items",
+    "weight"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/font.schema.json",
+  "title": "Minecraft Font Providers",
+  "description": "Schema for font JSON files in Minecraft 1.21.11 (font providers)",
+  "type": "object",
+  "required": ["providers"],
+  "properties": {
+    "providers": {
+      "type": "array",
+      "description": "List of font providers",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "required": ["type", "file", "ascent", "chars"],
+            "properties": {
+              "type": { "type": "string", "enum": ["bitmap"] },
+              "file": { "type": "string", "description": "Texture file resource location" },
+              "ascent": { "type": "integer", "description": "Ascent value for the font" },
+              "chars": {
+                "type": "array",
+                "description": "Array of character strings",
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "required": ["type", "id"],
+            "properties": {
+              "type": { "type": "string", "enum": ["reference"] },
+              "id": { "type": "string", "description": "Reference to another font provider" },
+              "filter": {
+                "type": "object",
+                "properties": {
+                  "uniform": { "type": "boolean" }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "required": ["type", "advances"],
+            "properties": {
+              "type": { "type": "string", "enum": ["space"] },
+              "advances": {
+                "type": "object",
+                "description": "Map of character to advance width",
+                "additionalProperties": { "type": "integer" }
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}

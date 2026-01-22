@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://minecraft.net/schemas/timeline.schema.json",
+  "title": "Minecraft Timeline",
+  "description": "Schema for timeline JSON files in Minecraft 1.21.11",
+  "type": "object",
+  "properties": {
+    "period_ticks": { "type": "integer" },
+    "tracks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "ease": { "type": "string" },
+          "keyframes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ticks": { "type": "integer" },
+                "value": {}
+              },
+              "required": ["ticks", "value"]
+            },
+            "minItems": 1
+          },
+          "modifier": { "type": "string" }
+        },
+        "required": ["keyframes"]
+      }
+    }
+  },
+  "required": ["period_ticks", "tracks"]
+}
