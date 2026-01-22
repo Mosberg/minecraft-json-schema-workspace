@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/texts.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/texts.schema.json",
   "title": "Minecraft Texts JSON",
   "description": "Schema for JSON files in assets/minecraft/texts (e.g., credits.json)",
   "type": "object",

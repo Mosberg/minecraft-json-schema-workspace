@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/models/block/cube_bottom_top.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/models/block/models/block/cube_bottom_top.schema.json",
   "title": "Minecraft Cube Bottom Top Model",
   "description": "Schema for cube_bottom_top block models (distinct bottom, top, and side textures)",
   "type": "object",

@@ -1,21 +1,21 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/cow_variant.schema.json",
-  "title": "Minecraft Cow Variant",
-  "description": "Schema for cow variant JSON files in Minecraft 1.21.11",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/data/minecraft/pig_variant.schema.json",
+  "title": "Minecraft Pig Variant",
+  "description": "Schema for pig variant JSON files in Minecraft 1.21.11",
   "type": "object",
   "properties": {
     "asset_id": {
       "type": "string",
-      "description": "Resource location for the cow variant texture"
+      "description": "Resource location for the pig variant texture"
     },
     "model": {
       "type": "string",
-      "description": "Optional model name for the cow variant"
+      "description": "Optional model name for the pig variant"
     },
     "spawn_conditions": {
       "type": "array",
-      "description": "Spawn conditions for this cow variant",
+      "description": "Spawn conditions for this pig variant",
       "items": {
         "type": "object",
         "properties": {

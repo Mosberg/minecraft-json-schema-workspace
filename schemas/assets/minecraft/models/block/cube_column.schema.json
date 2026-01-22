@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/models/block/cube_column.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/models/block/models/block/cube_column.schema.json",
   "title": "Minecraft Cube Column Model",
   "description": "Schema for cube_column block models (logs, pillars with top/side textures)",
   "type": "object",

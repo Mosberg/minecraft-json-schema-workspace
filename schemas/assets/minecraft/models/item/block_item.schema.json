@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/models/item/block_item.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/models/item/models/item/block_item.schema.json",
   "title": "Minecraft Block Item Model",
   "description": "Schema for block item models (items that reference block models)",
   "type": "object",

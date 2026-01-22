@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/models/block/slab.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/models/block/models/block/slab.schema.json",
   "title": "Minecraft Slab Model",
   "description": "Schema for slab block models (half-height blocks)",
   "type": "object",
@@ -8,12 +8,7 @@
   "properties": {
     "parent": {
       "type": "string",
-      "enum": [
-        "minecraft:block/slab",
-        "block/slab",
-        "minecraft:block/slab_top",
-        "block/slab_top"
-      ],
+      "enum": ["minecraft:block/slab", "block/slab", "minecraft:block/slab_top", "block/slab_top"],
       "description": "Slab or slab_top parent"
     },
     "textures": {

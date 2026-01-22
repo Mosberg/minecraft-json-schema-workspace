@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/models/item/generated.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/models/item/models/item/generated.schema.json",
   "title": "Minecraft Generated Item Model",
   "description": "Schema for generated item models (flat 2D items)",
   "type": "object",
@@ -8,11 +8,7 @@
   "properties": {
     "parent": {
       "type": "string",
-      "enum": [
-        "minecraft:item/generated",
-        "item/generated",
-        "builtin/generated"
-      ],
+      "enum": ["minecraft:item/generated", "item/generated", "builtin/generated"],
       "description": "Must be item/generated parent"
     },
     "textures": {
@@ -52,7 +48,7 @@
     "display": {
       "type": "object",
       "description": "Display transformations for different contexts",
-      "$ref": "https://minecraft.net/schemas/model.schema.json#/definitions/displayTransform"
+      "$ref": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/models/item/model.schema.json#/definitions/displayTransform"
     },
     "overrides": {
       "type": "array",

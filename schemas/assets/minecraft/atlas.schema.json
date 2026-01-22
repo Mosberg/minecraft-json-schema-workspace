@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/atlas.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/atlas.schema.json",
   "title": "Minecraft Texture Atlas Definition",
   "description": "Schema for atlas JSON files in Minecraft 1.21.11 (blocks.json, items.json, etc.)",
   "type": "object",

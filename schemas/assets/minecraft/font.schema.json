@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/font.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/font.schema.json",
   "title": "Minecraft Font Providers",
   "description": "Schema for font JSON files in Minecraft 1.21.11 (font providers)",
   "type": "object",

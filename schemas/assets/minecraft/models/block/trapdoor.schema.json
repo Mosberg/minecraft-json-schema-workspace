@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/models/block/trapdoor.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/models/block/models/block/trapdoor.schema.json",
   "title": "Minecraft Trapdoor Model",
   "description": "Schema for trapdoor block models",
   "type": "object",

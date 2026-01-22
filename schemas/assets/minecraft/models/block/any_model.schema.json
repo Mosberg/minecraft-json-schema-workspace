@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/models/block/any_model.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/models/block/models/block/any_model.schema.json",
   "title": "Minecraft Block Model (Generic)",
   "description": "Generic schema for block models with only a textures object and no parent property.",
   "type": "object",

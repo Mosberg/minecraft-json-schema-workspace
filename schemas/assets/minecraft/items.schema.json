@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/items.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/items.schema.json",
   "title": "Minecraft Item Model Reference",
   "description": "Schema for item JSON files in Minecraft 1.21.11 (item model references)",
   "type": "object",

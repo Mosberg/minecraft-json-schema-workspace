@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/lang.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/lang.schema.json",
   "title": "Minecraft Language File",
   "description": "Schema for lang JSON files in Minecraft 1.21.11 (translations and deprecated keys)",
   "type": "object",

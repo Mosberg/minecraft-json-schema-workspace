@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/models/item/any_item_model.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/models/item/models/item/any_item_model.schema.json",
   "title": "Minecraft Item Model (Generic)",
   "description": "Generic schema for item models with only a textures object and no parent property.",
   "type": "object",

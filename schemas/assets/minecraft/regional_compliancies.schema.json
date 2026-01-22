@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/regional_compliancies.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/regional_compliancies.schema.json",
   "title": "Minecraft Regional Compliancy Messages",
   "description": "Schema for regional_compliancies.json in Minecraft 1.21.11",
   "type": "object",

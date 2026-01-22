@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/dimension_type.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/data/minecraft/dimension_type.schema.json",
   "title": "Minecraft Dimension Type",
   "description": "Schema for dimension type JSON files in Minecraft 1.21.11",
   "type": "object",

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/test_environment.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/data/minecraft/test_environment.schema.json",
   "title": "Minecraft Test Environment",
   "description": "Schema for test environment JSON files in Minecraft 1.21.11",
   "type": "object",

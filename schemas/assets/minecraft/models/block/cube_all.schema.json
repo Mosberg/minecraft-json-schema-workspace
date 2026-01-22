@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/models/block/cube_all.schema.json",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/assets/minecraft/models/block/models/block/cube_all.schema.json",
   "title": "Minecraft Cube All Model",
   "description": "Schema for cube_all block models (all sides use same texture)",
   "type": "object",

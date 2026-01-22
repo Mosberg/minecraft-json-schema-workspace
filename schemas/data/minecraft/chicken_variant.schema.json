@@ -1,21 +1,21 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://minecraft.net/schemas/zombie_nautilus_variant.schema.json",
-  "title": "Minecraft Zombie Nautilus Variant",
-  "description": "Schema for zombie nautilus variant JSON files in Minecraft 1.21.11",
+  "$id": "https://raw.githubusercontent.com/Mosberg/minecraft-json-schema-workspace/refs/heads/main/schemas/data/minecraft/chicken_variant.schema.json",
+  "title": "Minecraft Chicken Variant",
+  "description": "Schema for chicken variant JSON files in Minecraft 1.21.11",
   "type": "object",
   "properties": {
     "asset_id": {
       "type": "string",
-      "description": "Resource location for the zombie nautilus variant texture"
+      "description": "Resource location for the chicken variant texture"
     },
     "model": {
       "type": "string",
-      "description": "Optional model name for the zombie nautilus variant"
+      "description": "Optional model name for the chicken variant"
     },
     "spawn_conditions": {
       "type": "array",
-      "description": "Spawn conditions for this zombie nautilus variant",
+      "description": "Spawn conditions for this chicken variant",
       "items": {
         "type": "object",
         "properties": {
