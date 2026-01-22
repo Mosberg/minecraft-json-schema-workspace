@@ -12,13 +12,9 @@
 - **resources/data/minecraft/**: Reference vanilla data files.
 - **schemas/**: All schema definitions, organized to match vanilla folder structure.
 - **.vscode/settings.json**: Maps file globs to schemas for automatic validation in VS Code.
-- **tools/schema_tool.py**: Python utility for generating/checking schema files based on VS Code settings.
 
 ## Developer Workflows
 
-- **Schema Generation:**
-  - Run `./gradlew generateSchemas` to create missing schemas (uses `tools/schema_tool.py`).
-  - Run `./gradlew check` to validate all referenced schemas for existence and JSON correctness.
 - **VS Code Integration:**
   - Schema validation is automatic via `.vscode/settings.json` mappings; no need to add `$schema` manually.
   - Update `.vscode/settings.json` when adding/renaming schemas or changing file globs.
@@ -43,7 +39,6 @@
 
 ## Examples
 
-- To generate schemas: `./gradlew generateSchemas`
 - To check schemas: `./gradlew check`
 - To add a new schema: Place in `schemas/` matching the vanilla folder, update `.vscode/settings.json` with a new mapping.
 
