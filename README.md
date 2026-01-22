@@ -28,6 +28,8 @@ A schema-driven workspace for authoring and generating `*.schema.json` files for
 This repository exists to make Minecraft JSON formats easier to work with by providing schemas that drive validation and autocomplete in editors.
 It includes a local reference corpus of vanilla Minecraft files (assets + data) so schemas stay grounded in real examples.
 
+[Minecraft Java Edition 1.21.11 — JSON Schema Workspace](https://github.com/Mosberg/minecraft-json-schema-workspace)
+
 ### Goals
 
 - Provide schemas strict enough to catch mistakes while matching vanilla reality.
