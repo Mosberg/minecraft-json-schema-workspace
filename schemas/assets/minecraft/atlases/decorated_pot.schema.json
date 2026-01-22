@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "minecraft:schemas/assets/minecraft/atlases/decorated_pot.schema.json",
+  "title": "Atlas: decorated_pot.json",
+  "allOf": [{ "$ref": "../atlases.schema.json" }]
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "minecraft:schemas/assets/minecraft/atlases/blocks.schema.json",
+  "title": "Atlas: blocks.json",
+  "allOf": [{ "$ref": "../atlases.schema.json" }]
+}

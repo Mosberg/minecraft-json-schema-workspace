@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "minecraft:schemas/assets/minecraft/atlases/beds.schema.json",
+  "title": "Atlas: beds.json",
+  "allOf": [{ "$ref": "../atlases.schema.json" }]
+}

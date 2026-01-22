@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "minecraft:schemas/assets/minecraft/atlases/banner_patterns.schema.json",
+  "title": "Atlas: banner_patterns.json",
+  "allOf": [{ "$ref": "../atlases.schema.json" }]
+}
