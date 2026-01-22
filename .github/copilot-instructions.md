@@ -13,7 +13,6 @@
 - **schemas/**: All schema definitions, organized to match vanilla folder structure.
 - **.vscode/settings.json**: Maps file globs to schemas for automatic validation in VS Code.
 - **tools/schema_tool.py**: Python utility for generating/checking schema files based on VS Code settings.
-- **docs/project-structure.md**: Full directory and file layout reference.
 
 ## Developer Workflows
 
@@ -51,7 +50,6 @@
 ## References
 
 - [README.md](../README.md): High-level overview and quick start.
-- [docs/project-structure.md](../docs/project-structure.md): Full directory reference.
 - [tools/schema_tool.py](../tools/schema_tool.py): Schema generation/check logic.
 - [.vscode/settings.json](../.vscode/settings.json): Schema mapping for validation.
 

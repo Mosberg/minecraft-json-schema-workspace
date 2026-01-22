@@ -1,6 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "minecraft:schemas/assets/minecraft/atlases/chests.schema.json",
-  "title": "Atlas: chests.json",
-  "allOf": [{ "$ref": "../atlases.schema.json" }]
-}
