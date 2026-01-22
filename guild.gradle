@@ -1,0 +1,31 @@
+plugins {
+  id 'base'
+  id 'java'
+}
+
+// Enforce Java 21 for any JVM-based tasks/plugins (toolchain is the recommended approach).
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
+}
+
+def pythonExe = providers.gradleProperty('python').orElse('python3')
+def schemaTool = providers.gradleProperty('schemaTool').orElse('tools/schema_tool.py')
+def schemaSettings = providers.gradleProperty('schemaSettings').orElse('.vscode/settings.json')
+
+tasks.register('generateSchemas', Exec) {
+  group = 'schemas'
+  description = 'Generate JSON Schema files referenced by .vscode/settings.json (creates placeholders if missing).'
+  commandLine pythonExe.get(), schemaTool.get(), 'generate', '--settings', schemaSettings.get()
+}
+
+tasks.register('checkSchemas', Exec) {
+  group = 'verification'
+  description = 'Verify that all schema URLs referenced by .vscode/settings.json exist and contain valid JSON.'
+  commandLine pythonExe.get(), schemaTool.get(), 'check', '--settings', schemaSettings.get()
+}
+
+tasks.named('check') {
+  dependsOn tasks.named('checkSchemas')
+}
