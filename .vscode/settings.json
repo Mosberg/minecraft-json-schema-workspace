@@ -1,0 +1,228 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["schemas/assets/minecraft/atlases.schema.json"],
+      "url": "./schemas/assets/minecraft/atlases.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/blockstates.schema.json"],
+      "url": "./schemas/assets/minecraft/blockstates.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/equipment.schema.json"],
+      "url": "./schemas/assets/minecraft/equipment.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/font.schema.json"],
+      "url": "./schemas/assets/minecraft/font.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/gpu_warnlist.schema.json"],
+      "url": "./schemas/assets/minecraft/gpu_warnlist.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/items.schema.json"],
+      "url": "./schemas/assets/minecraft/items.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/lang.schema.json"],
+      "url": "./schemas/assets/minecraft/lang.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/particles.schema.json"],
+      "url": "./schemas/assets/minecraft/particles.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/post_effect.schema.json"],
+      "url": "./schemas/assets/minecraft/post_effect.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/regional_compliancies.schema.json"],
+      "url": "./schemas/assets/minecraft/regional_compliancies.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/texts.schema.json"],
+      "url": "./schemas/assets/minecraft/texts.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/waypoint_style.schema.json"],
+      "url": "./schemas/assets/minecraft/waypoint_style.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/any_model.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/any_model.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/button.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/button.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/cross.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/cross.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/cube_all.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/cube_all.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/cube_bottom_top.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/cube_bottom_top.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/cube_column.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/cube_column.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/cube.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/cube.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/door.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/door.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/fence_gate.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/fence_gate.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/fence.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/fence.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/pressure_plate.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/pressure_plate.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/slab.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/slab.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/stairs.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/stairs.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/block/trapdoor.schema.json"],
+      "url": "./schemas/assets/minecraft/models/block/trapdoor.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/item/any_item_model.schema.json"],
+      "url": "./schemas/assets/minecraft/models/item/any_item_model.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/item/block_item.schema.json"],
+      "url": "./schemas/assets/minecraft/models/item/block_item.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/item/generated.schema.json"],
+      "url": "./schemas/assets/minecraft/models/item/generated.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/item/handheld.schema.json"],
+      "url": "./schemas/assets/minecraft/models/item/handheld.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/assets/minecraft/models/item/trident_in_hand.schema.json"],
+      "url": "./schemas/assets/minecraft/models/item/trident_in_hand.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/advancements.schema.json"],
+      "url": "./schemas/data/advancements.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/banner_pattern.schema.json"],
+      "url": "./schemas/data/banner_pattern.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/cat_variant.schema.json"],
+      "url": "./schemas/data/cat_variant.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/chat_type.schema.json"],
+      "url": "./schemas/data/chat_type.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/chicken_variant.schema.json"],
+      "url": "./schemas/data/chicken_variant.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/cow_variant.schema.json"],
+      "url": "./schemas/data/cow_variant.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/damage_type.schema.json"],
+      "url": "./schemas/data/damage_type.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/dialog.schema.json"],
+      "url": "./schemas/data/dialog.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/dimension_type.schema.json"],
+      "url": "./schemas/data/dimension_type.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/enchantment_provider.schema.json"],
+      "url": "./schemas/data/enchantment_provider.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/enchantment.schema.json"],
+      "url": "./schemas/data/enchantment.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/frog_variant.schema.json"],
+      "url": "./schemas/data/frog_variant.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/instrument.schema.json"],
+      "url": "./schemas/data/instrument.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/jukebox_song.schema.json"],
+      "url": "./schemas/data/jukebox_song.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/painting_variant.schema.json"],
+      "url": "./schemas/data/painting_variant.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/pig_variant.schema.json"],
+      "url": "./schemas/data/pig_variant.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/test_environment.schema.json"],
+      "url": "./schemas/data/test_environment.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/test_instance.schema.json"],
+      "url": "./schemas/data/test_instance.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/timeline.schema.json"],
+      "url": "./schemas/data/timeline.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/trial_spawner.schema.json"],
+      "url": "./schemas/data/trial_spawner.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/trim_material.schema.json"],
+      "url": "./schemas/data/trim_material.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/trim_pattern.schema.json"],
+      "url": "./schemas/data/trim_pattern.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/wolf_sound_variant.schema.json"],
+      "url": "./schemas/data/wolf_sound_variant.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/wolf_variant.schema.json"],
+      "url": "./schemas/data/wolf_variant.schema.json"
+    },
+    {
+      "fileMatch": ["schemas/data/zombie_nautilus_variant.schema.json"],
+      "url": "./schemas/data/zombie_nautilus_variant.schema.json"
+    }
+  ]
+}
